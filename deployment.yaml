@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nodejs-app
-          image: mhart/alpine-node:6.10
+          image: httpd:latest
           ports:
             - protocol: TCP
               containerPort: 80
