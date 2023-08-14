@@ -32,5 +32,4 @@ jobs:
         kubectl get services
         kubectl get deployments
         kubectl get service nodejs-app-service -o yaml
-        kubectl get LoadBalancer nodejs-app-service -o yaml
         
