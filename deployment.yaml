@@ -17,5 +17,5 @@ spec:
           image: mhart/alpine-node:6.10
           ports:
             - protocol: TCP
-              port: 80
+              targetPort: 80
               containerPort: 80
