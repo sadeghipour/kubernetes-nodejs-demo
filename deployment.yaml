@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: nodejs-app
-          image: node:lts-alpine
+          image: bitnami/express:latest
           ports:
             - containerPort: 3000
