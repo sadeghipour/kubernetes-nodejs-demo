@@ -29,4 +29,5 @@ jobs:
         kubectl config get-contexts
         kubectl apply -f ./service.yaml
         kubectl apply -f ./deployment.yaml
+        kubectl get services
         
