@@ -27,5 +27,5 @@ jobs:
       run: |
         doctl kubernetes cluster kubeconfig save a0a93fca-a609-44f6-939b-a540461d0d6c
         kubectl config get-contexts
-        kubectl apply -f ./../../deployment.yaml
-        kubectl apply -f ./../../service.yaml
+        kubectl apply -f ./deployment.yaml
+        kubectl apply -f ./service.yaml
