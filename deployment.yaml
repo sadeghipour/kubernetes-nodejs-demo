@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodejs-app
+  myapp: nodejs-app
 spec:
   replicas: 3
   selector:
