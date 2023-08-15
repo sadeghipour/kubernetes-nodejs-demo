@@ -28,6 +28,7 @@ jobs:
         doctl kubernetes cluster kubeconfig save a0a93fca-a609-44f6-939b-a540461d0d6c
         kubectl config get-contexts
         kubectl delete pods -l app=nodejs-app
+        kubectl delete pods -l app=nodejs-app-service-v1
         kubectl apply -f ./service.yaml
         kubectl apply -f ./deployment.yaml
         kubectl annotate deployment nodejs-app kubernetes.io/change-cause="$(date)"
