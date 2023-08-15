@@ -27,9 +27,9 @@ jobs:
       with:
         key: ${{ runner.os }}-mycache
         restore-keys: ${{ runner.os }}-mycache
-        # This will force the workflow to re-run
         force: true
-
+        path: .
+        
     - name: Deploy to Kubernetes
       run: |
         doctl kubernetes cluster kubeconfig save 3020cc60-30c2-4b3f-bbd8-2d530a659784
