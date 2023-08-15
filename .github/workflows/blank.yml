@@ -33,5 +33,6 @@ jobs:
         kubectl annotate deployment nodejs-app kubernetes.io/change-cause="$(date)"
         kubectl get services
         kubectl get deployments
+        kubectl get endpoints nodejs-app-service
         kubectl get service nodejs-app-service -o yaml
         
