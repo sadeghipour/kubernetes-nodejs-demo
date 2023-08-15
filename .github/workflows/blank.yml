@@ -31,3 +31,4 @@ jobs:
         kubectl get pods
         kubectl apply -f ./service.yaml
         kubectl apply -f ./deployment.yaml
+        kubectl get pods
