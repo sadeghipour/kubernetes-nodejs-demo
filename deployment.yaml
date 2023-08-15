@@ -15,6 +15,7 @@ spec:
       containers:
         - name: nodejs-app
           image: registry.digitalocean.com/deneme-repo/deneme1:latest
+          imagePullPolicy: Always
           ports:
             - protocol: TCP
               containerPort: 80
