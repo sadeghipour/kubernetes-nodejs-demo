@@ -27,6 +27,7 @@ jobs:
       run: |
         doctl kubernetes cluster kubeconfig save 3020cc60-30c2-4b3f-bbd8-2d530a659784
         kubectl config get-contexts
+        kubectl delete --all pods
         kubectl get pods
         kubectl logs nodejs-app-99b4876b5-qsz7g -c nodejs-app
         kubectl apply -f ./service.yaml
