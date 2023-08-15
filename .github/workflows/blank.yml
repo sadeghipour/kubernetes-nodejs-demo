@@ -29,6 +29,5 @@ jobs:
         kubectl config get-contexts
         kubectl delete --all pods
         kubectl get pods
-        kubectl logs nodejs-app-99b4876b5-qsz7g -c nodejs-app
         kubectl apply -f ./service.yaml
         kubectl apply -f ./deployment.yaml
