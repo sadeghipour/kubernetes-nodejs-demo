@@ -16,6 +16,17 @@ spec:
         - name: nodejs-app
           image: registry.digitalocean.com/deneme-repo/deneme1:latest
           imagePullPolicy: Always
+          env:
+            - name: DOCKER_REGISTRY_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: digital ocean-registry-secret
+                  key: DOCKER_REGISTRY_USERNAME
+            - name: DOCKER_REGISTRY_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: digitalocean-registry-secret
+                  key: DOCKER_REGISTRY_PASSWORD
           ports:
             - protocol: TCP
               containerPort: 80
