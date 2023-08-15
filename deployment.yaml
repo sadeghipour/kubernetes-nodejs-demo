@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nodejs-app
-          image: httpd:latest
+          image: registry.digitalocean.com/deneme-repo/deneme1:latest
           ports:
             - protocol: TCP
               containerPort: 80
